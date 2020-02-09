@@ -15,6 +15,9 @@
 		AAAF1CEF23EFE42B0039077D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAAF1CED23EFE42B0039077D /* LaunchScreen.storyboard */; };
 		AAAF1CFA23EFE42B0039077D /* HomeworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAF1CF923EFE42B0039077D /* HomeworkTests.swift */; };
 		AAAF1D0523EFE42B0039077D /* HomeworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAF1D0423EFE42B0039077D /* HomeworkUITests.swift */; };
+		AAAF1D1323EFE43E0039077D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAF1D1223EFE43E0039077D /* ListViewController.swift */; };
+		AAAF1D1523EFE4510039077D /* MemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAF1D1423EFE4510039077D /* MemoViewController.swift */; };
+		AAAF1D1723EFE45F0039077D /* NewMemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAF1D1623EFE45F0039077D /* NewMemoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		AAAF1D0023EFE42B0039077D /* HomeworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAAF1D0423EFE42B0039077D /* HomeworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkUITests.swift; sourceTree = "<group>"; };
 		AAAF1D0623EFE42B0039077D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAAF1D1223EFE43E0039077D /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		AAAF1D1423EFE4510039077D /* MemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoViewController.swift; sourceTree = "<group>"; };
+		AAAF1D1623EFE45F0039077D /* NewMemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,9 @@
 				AAAF1CE223EFE4250039077D /* AppDelegate.swift */,
 				AAAF1CE423EFE4250039077D /* SceneDelegate.swift */,
 				AAAF1CE623EFE4250039077D /* ViewController.swift */,
+				AAAF1D1223EFE43E0039077D /* ListViewController.swift */,
+				AAAF1D1423EFE4510039077D /* MemoViewController.swift */,
+				AAAF1D1623EFE45F0039077D /* NewMemoViewController.swift */,
 				AAAF1CE823EFE4250039077D /* Main.storyboard */,
 				AAAF1CEB23EFE42B0039077D /* Assets.xcassets */,
 				AAAF1CED23EFE42B0039077D /* LaunchScreen.storyboard */,
@@ -261,6 +270,9 @@
 			files = (
 				AAAF1CE723EFE4250039077D /* ViewController.swift in Sources */,
 				AAAF1CE323EFE4250039077D /* AppDelegate.swift in Sources */,
+				AAAF1D1523EFE4510039077D /* MemoViewController.swift in Sources */,
+				AAAF1D1723EFE45F0039077D /* NewMemoViewController.swift in Sources */,
+				AAAF1D1323EFE43E0039077D /* ListViewController.swift in Sources */,
 				AAAF1CE523EFE4250039077D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
