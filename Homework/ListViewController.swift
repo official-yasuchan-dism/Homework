@@ -8,22 +8,25 @@
 
 import UIKit
 
-class ListViewController: UIViewController, UITableViewDataSource {
-
+class ListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    
     //StoryBordでのTableViewの宣言
-     @IBOutlet var table: UITableView!
-     
-     
-    //宿題を入れるための配列
-     var homeworkNameArray = [String]()
-     var titleText: String = ""
+     @IBOutlet weak var table: UITableView!
+    
+     var saveData: UserDefaults = UserDefaults.standard
+    @IBOutlet var titleTextField: UITextField!
+    @IBOutlet var contentTextView: UITextView!
+    var titleText: String!
+    
+    
+
 
      override func viewDidLoad() {
          super.viewDidLoad()
         
-        print(titleText)
+        table.delegate = self
 
-        self.navigationItem.title = titleText
         
          table.dataSource = self
          // Do any additional setup after loading the view.
@@ -37,24 +40,39 @@ class ListViewController: UIViewController, UITableViewDataSource {
 
      //セルの数　設定
      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-         return 10
+         return 20
      }
      
      //ID付きセルの取得、セル付属のTextLabelに「テスト」と表示
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
          let cell = UITableViewCell()
-         cell.textLabel?.text = "test"
+         cell.textLabel?.text = ""
          return cell
      }
      
-
-     /*
-     // MARK: - Navigation
-
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         // Get the new view controller using segue.destination.
-         // Pass the selected object to the new view controller.
-     }
-     */
+    @IBAction func edit() {
+        
+    }
+   
+    //セルを選択したらMemoViewControllerへ
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //セルの選択解除　1つのセルを選んでまた次回cellを選ぶ時前回に飛んだのを削除
+        tableView.deselectRow(at: indexPath, animated: true)
+        //memoの画面に遷移
+        performSegue(withIdentifier: "toMemo", sender: indexPath.row)
+    }
+    //"toMemo"はsegueの名前
+    
+    //画面遷移
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toMemo" {
+            let MemoVC: MemoViewController = segue.destination as! MemoViewController
+            
+             //senderははAnyでInt整数
+             MemoVC.number = sender as! Int
+            
+            
+        }
+    }
+    
 }

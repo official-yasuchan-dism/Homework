@@ -8,31 +8,46 @@
 
 import UIKit
 
-class NewMemoViewController: UIViewController {
 
-      var saveData: UserDefaults = UserDefaults.standard
-     
+
+class NewMemoViewController: UIViewController, UITextFieldDelegate {
+
      @IBOutlet var titleTextField: UITextField!
      @IBOutlet var contentTextView: UITextView!
-     
+
+     var saveData: UserDefaults = UserDefaults.standard
+
      override func viewDidLoad() {
          super.viewDidLoad()
          
-         titleTextField.text = saveData.object(forKey: "title") as? String
-         contentTextView.text = saveData.object(forKey: "content") as? String
-         // Do any additional setup after loading the view.
+        titleTextField.delegate = self
+        //enterキーで閉じる
      }
      
     @IBAction func saveMemo() {
         saveData.set(titleTextField.text, forKey: "title")
         saveData.set(contentTextView.text, forKey: "content")
+        
+        self.dismiss(animated: true, completion: nil)
+        //完了ボタンで前の画面に戻る
      }
      
      @IBAction func cancel() {
-         self.dismiss(animated: true, completion: nil)
-     }
         
+          let alert = UIAlertController(title: "保存が完了していません", message: "このまま戻りますか？", preferredStyle: .alert)
+                let cancelAction = UIAlertAction(title: "キャンセル", style: .default)
+                let okAction = UIAlertAction(title: "OK", style: .destructive) { (action: UIAlertAction) in
+                    self.dismiss(animated: true, completion: nil)
+                    //OKボタンで前の画面に戻る
+                }
+                alert.addAction(cancelAction)
+                alert.addAction(okAction)
+                present(alert, animated: true, completion: nil)
 
+    }
+    
+   
+    
     /*
     // MARK: - Navigation
 
