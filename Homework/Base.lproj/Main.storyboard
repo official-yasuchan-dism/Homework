@@ -15,9 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXx-V4-hHK">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXx-V4-hHK">
                                 <rect key="frame" x="56" y="132" width="130" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="28"/>
                                 <state key="normal" title="数学">
@@ -28,9 +27,8 @@
                                     <segue destination="2Xy-88-h31" kind="show" identifier="数学" id="f1i-eG-pDp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAB-vg-vg0">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAB-vg-vg0">
                                 <rect key="frame" x="228" y="132" width="130" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="28"/>
                                 <state key="normal" title="国語">
@@ -41,9 +39,8 @@
                                     <segue destination="2Xy-88-h31" kind="show" identifier="国語" id="j4O-H6-CLM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrn-ov-QcH">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrn-ov-QcH">
                                 <rect key="frame" x="56" y="250" width="130" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="28"/>
                                 <state key="normal" title="英語">
@@ -54,10 +51,12 @@
                                     <segue destination="2Xy-88-h31" kind="show" identifier="英語" id="Rol-PV-Rby"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AhO-Pe-ocU">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AhO-Pe-ocU">
                                 <rect key="frame" x="56" y="368" width="130" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="26M-aU-eOL"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="28"/>
                                 <state key="normal" title="社会">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -67,9 +66,8 @@
                                     <segue destination="2Xy-88-h31" kind="show" identifier="社会" id="W1O-06-8xa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XGg-fR-G0l">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XGg-fR-G0l">
                                 <rect key="frame" x="56" y="486" width="130" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="28"/>
                                 <state key="normal" title="美術">
@@ -80,9 +78,8 @@
                                     <segue destination="2Xy-88-h31" kind="show" identifier="美術" id="0e9-tv-JA4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbu-lG-JJh">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbu-lG-JJh">
                                 <rect key="frame" x="56" y="604" width="130" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="28"/>
                                 <state key="normal" title="技術">
@@ -93,10 +90,12 @@
                                     <segue destination="2Xy-88-h31" kind="show" identifier="技術" id="KnG-Ty-3Bu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULv-JR-t4b">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULv-JR-t4b">
                                 <rect key="frame" x="228" y="604" width="130" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="zgG-lF-2BQ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="28"/>
                                 <state key="normal" title="家庭">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -105,9 +104,8 @@
                                     <segue destination="2Xy-88-h31" kind="show" identifier="家庭" id="Nf3-Fb-R9m"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpV-4E-5f3">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpV-4E-5f3">
                                 <rect key="frame" x="228" y="368" width="130" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="28"/>
                                 <state key="normal" title="保健体育">
@@ -118,9 +116,8 @@
                                     <segue destination="2Xy-88-h31" kind="show" identifier="保健体育" id="XC0-dJ-CAD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xlG-za-6De">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xlG-za-6De">
                                 <rect key="frame" x="228" y="250" width="130" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="28"/>
                                 <state key="normal" title="理科">
@@ -131,9 +128,8 @@
                                     <segue destination="2Xy-88-h31" kind="show" identifier="理科" id="ye2-HK-scr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etr-Jf-RBv">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etr-Jf-RBv">
                                 <rect key="frame" x="56" y="722" width="302" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="28"/>
                                 <state key="normal" title="その他">
@@ -145,9 +141,8 @@
                                     <segue destination="2Xy-88-h31" kind="show" identifier="その他" id="mjK-uS-7DX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pq-gh-yAm">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pq-gh-yAm">
                                 <rect key="frame" x="228" y="486" width="130" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="28"/>
                                 <state key="normal" title="音楽">
@@ -160,9 +155,55 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="etr-Jf-RBv" firstAttribute="top" secondItem="ULv-JR-t4b" secondAttribute="bottom" constant="38" id="1X4-2j-Uk3"/>
+                            <constraint firstItem="ULv-JR-t4b" firstAttribute="leading" secondItem="bAB-vg-vg0" secondAttribute="leading" id="4Xa-bi-fXW"/>
+                            <constraint firstItem="AhO-Pe-ocU" firstAttribute="leading" secondItem="etr-Jf-RBv" secondAttribute="leading" id="6eh-yf-b45"/>
+                            <constraint firstItem="ULv-JR-t4b" firstAttribute="trailing" secondItem="bAB-vg-vg0" secondAttribute="trailing" id="Aeh-LF-1oU"/>
+                            <constraint firstItem="ULv-JR-t4b" firstAttribute="leading" secondItem="hbu-lG-JJh" secondAttribute="trailing" constant="42" id="D0u-Xc-jjb"/>
+                            <constraint firstItem="ULv-JR-t4b" firstAttribute="leading" secondItem="1pq-gh-yAm" secondAttribute="leading" id="MCM-lm-wca"/>
+                            <constraint firstItem="ULv-JR-t4b" firstAttribute="top" secondItem="hbu-lG-JJh" secondAttribute="top" id="MJD-8O-7A0"/>
+                            <constraint firstItem="ULv-JR-t4b" firstAttribute="trailing" secondItem="xlG-za-6De" secondAttribute="trailing" id="NvD-6z-Nc6"/>
+                            <constraint firstItem="AhO-Pe-ocU" firstAttribute="trailing" secondItem="GXx-V4-hHK" secondAttribute="trailing" id="Rc9-As-wGY"/>
+                            <constraint firstItem="AhO-Pe-ocU" firstAttribute="top" secondItem="xrn-ov-QcH" secondAttribute="bottom" constant="38" id="Vr0-o4-jCC"/>
+                            <constraint firstItem="lb4-td-mAp" firstAttribute="trailing" secondItem="ULv-JR-t4b" secondAttribute="trailing" constant="56" id="VwK-xm-QU8"/>
+                            <constraint firstItem="AhO-Pe-ocU" firstAttribute="leading" secondItem="XGg-fR-G0l" secondAttribute="leading" id="WKz-ex-Guw"/>
+                            <constraint firstItem="ULv-JR-t4b" firstAttribute="leading" secondItem="xlG-za-6De" secondAttribute="leading" id="Wan-Sj-dgZ"/>
+                            <constraint firstItem="ULv-JR-t4b" firstAttribute="trailing" secondItem="1pq-gh-yAm" secondAttribute="trailing" id="ZWv-d8-6YM"/>
+                            <constraint firstItem="XGg-fR-G0l" firstAttribute="top" secondItem="AhO-Pe-ocU" secondAttribute="bottom" constant="38" id="Zzt-XT-2br"/>
+                            <constraint firstItem="AhO-Pe-ocU" firstAttribute="trailing" secondItem="hbu-lG-JJh" secondAttribute="trailing" id="dgD-Uw-dyN"/>
+                            <constraint firstItem="AhO-Pe-ocU" firstAttribute="leading" secondItem="GXx-V4-hHK" secondAttribute="leading" id="eMp-TF-PkA"/>
+                            <constraint firstItem="AhO-Pe-ocU" firstAttribute="baseline" secondItem="rpV-4E-5f3" secondAttribute="firstBaseline" id="g41-eT-zgQ"/>
+                            <constraint firstItem="AhO-Pe-ocU" firstAttribute="leading" secondItem="lb4-td-mAp" secondAttribute="leading" constant="56" id="gSB-Rr-1mO"/>
+                            <constraint firstItem="AhO-Pe-ocU" firstAttribute="leading" secondItem="hbu-lG-JJh" secondAttribute="leading" id="h1d-Ec-IDC"/>
+                            <constraint firstItem="ULv-JR-t4b" firstAttribute="top" secondItem="1pq-gh-yAm" secondAttribute="bottom" constant="38" id="hah-BF-Kes"/>
+                            <constraint firstItem="AhO-Pe-ocU" firstAttribute="trailing" secondItem="XGg-fR-G0l" secondAttribute="trailing" id="lKG-16-Lpv"/>
+                            <constraint firstItem="ULv-JR-t4b" firstAttribute="leading" secondItem="rpV-4E-5f3" secondAttribute="leading" id="mil-X6-8yy"/>
+                            <constraint firstItem="ULv-JR-t4b" firstAttribute="baseline" secondItem="hbu-lG-JJh" secondAttribute="firstBaseline" id="mmC-pI-kXV"/>
+                            <constraint firstItem="AhO-Pe-ocU" firstAttribute="leading" secondItem="xrn-ov-QcH" secondAttribute="leading" id="rHb-Td-p0p"/>
+                            <constraint firstItem="AhO-Pe-ocU" firstAttribute="top" secondItem="9Sy-oO-3Vc" secondAttribute="top" constant="368" id="sb2-J7-nhP"/>
+                            <constraint firstAttribute="bottom" secondItem="ULv-JR-t4b" secondAttribute="bottom" constant="212" id="u3y-3s-PzQ"/>
+                            <constraint firstItem="ULv-JR-t4b" firstAttribute="trailing" secondItem="rpV-4E-5f3" secondAttribute="trailing" id="weP-Uw-i5T"/>
+                            <constraint firstItem="AhO-Pe-ocU" firstAttribute="trailing" secondItem="xrn-ov-QcH" secondAttribute="trailing" id="xkl-QY-eAV"/>
+                            <constraint firstItem="AhO-Pe-ocU" firstAttribute="top" secondItem="rpV-4E-5f3" secondAttribute="top" id="z6C-ba-Bd6"/>
+                            <constraint firstItem="ULv-JR-t4b" firstAttribute="trailing" secondItem="etr-Jf-RBv" secondAttribute="trailing" id="zIz-qi-hqo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="lb4-td-mAp"/>
                     </view>
                     <navigationItem key="navigationItem" title="科目" id="WM9-gD-e9G"/>
+                    <connections>
+                        <outlet property="artButton" destination="XGg-fR-G0l" id="3og-7B-aYg"/>
+                        <outlet property="englishButton" destination="xrn-ov-QcH" id="6tp-8c-LX8"/>
+                        <outlet property="homeeconomicsButton" destination="ULv-JR-t4b" id="L6v-SP-LW4"/>
+                        <outlet property="japaneseButton" destination="bAB-vg-vg0" id="Icj-LF-QXw"/>
+                        <outlet property="mathematicsButton" destination="GXx-V4-hHK" id="yhh-93-au7"/>
+                        <outlet property="musicButton" destination="1pq-gh-yAm" id="q6A-yH-UMJ"/>
+                        <outlet property="otherButton" destination="etr-Jf-RBv" id="hVD-xS-f6r"/>
+                        <outlet property="peButton" destination="rpV-4E-5f3" id="aok-a0-a8v"/>
+                        <outlet property="scienceButton" destination="xlG-za-6De" id="VDl-XQ-wxJ"/>
+                        <outlet property="socialstudiesButton" destination="AhO-Pe-ocU" id="ZnF-UB-waO"/>
+                        <outlet property="technologyButton" destination="hbu-lG-JJh" id="PTU-o9-D5u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="scz-wY-uY8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -189,7 +230,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="yum-sz-saW" kind="show" identifier="toMemo" id="faG-qB-8vf"/>
+                                            <segue destination="yum-sz-saW" kind="show" id="MCu-Nn-78J"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -207,7 +248,7 @@
                             </barButtonItem>
                             <barButtonItem image="plus" catalog="system" id="9P4-cH-wMd">
                                 <connections>
-                                    <segue destination="yum-sz-saW" kind="show" id="LpY-5a-uNG"/>
+                                    <segue destination="Znf-pZ-4df" kind="presentation" id="PzO-Pn-eFI"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -225,114 +266,116 @@
             <objects>
                 <viewController title="新規宿題" id="Znf-pZ-4df" customClass="NewMemoViewController" customModule="Homework" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IZV-6x-dkO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="778-DK-tor">
-                                <rect key="frame" x="0.0" y="254" width="414" height="128"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </datePicker>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itO-CF-I3I">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itO-CF-I3I">
                                 <rect key="frame" x="356" y="20" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="完了"/>
                                 <connections>
                                     <action selector="saveMemo" destination="Znf-pZ-4df" eventType="touchUpInside" id="hlW-FN-oPi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8I-7u-RIF">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8I-7u-RIF">
                                 <rect key="frame" x="20" y="20" width="77" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="キャンセル"/>
                                 <connections>
                                     <action selector="cancel" destination="Znf-pZ-4df" eventType="touchUpInside" id="vdv-5o-dKr"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="新規宿題" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gth-Dd-hHG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="新規宿題" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gth-Dd-hHG">
                                 <rect key="frame" x="20" y="86" width="117" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v3A-Dt-vD4">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v3A-Dt-vD4">
                                 <rect key="frame" x="102" y="163" width="292" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="タイトル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6z-yg-FEs">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイトル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6z-yg-FEs">
                                 <rect key="frame" x="20" y="170" width="66" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="提出期限" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbb-Zx-wTi">
-                                <rect key="frame" x="20" y="219" width="66" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7O-eU-AdQ">
-                                <rect key="frame" x="0.0" y="206" width="414" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal">
-                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YrM-LQ-fl7">
-                                <rect key="frame" x="20" y="418" width="367" height="390"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YrM-LQ-fl7">
+                                <rect key="frame" x="20" y="379" width="367" height="429"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="______________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9uX-BI-0Fi">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="______________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9uX-BI-0Fi">
                                 <rect key="frame" x="20" y="163" width="403" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="______________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVO-B7-HaA">
-                                <rect key="frame" x="20" y="218" width="403" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="______________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVO-B7-HaA">
+                                <rect key="frame" x="20" y="313.5" width="403" height="38.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="メモ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yjr-II-vpa">
-                                <rect key="frame" x="20" y="390" width="33" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メモ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yjr-II-vpa">
+                                <rect key="frame" x="20" y="360" width="33" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dC-rl-jfF">
-                                <rect key="frame" x="102" y="206" width="285" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="778-DK-tor">
+                                <rect key="frame" x="102" y="196" width="311" height="147"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提出期限" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbb-Zx-wTi">
+                                <rect key="frame" x="20" y="259" width="66" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="L6z-yg-FEs" firstAttribute="centerY" secondItem="v3A-Dt-vD4" secondAttribute="centerY" id="07F-nz-h8L"/>
+                            <constraint firstItem="itO-CF-I3I" firstAttribute="top" secondItem="lSC-te-PnD" secondAttribute="top" constant="20" id="0gD-sj-KyI"/>
+                            <constraint firstItem="yjr-II-vpa" firstAttribute="top" secondItem="xVO-B7-HaA" secondAttribute="bottom" constant="8" id="7d7-Ho-ifJ"/>
+                            <constraint firstItem="L6z-yg-FEs" firstAttribute="leading" secondItem="xVO-B7-HaA" secondAttribute="leading" id="8Ii-zK-YLK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9uX-BI-0Fi" secondAttribute="trailing" constant="-29" id="B89-Ae-0Xk"/>
+                            <constraint firstItem="L6z-yg-FEs" firstAttribute="leading" secondItem="9uX-BI-0Fi" secondAttribute="leading" id="DfA-AM-gBh"/>
+                            <constraint firstItem="itO-CF-I3I" firstAttribute="trailing" secondItem="YrM-LQ-fl7" secondAttribute="trailing" id="KJK-x4-1vz"/>
+                            <constraint firstItem="L6z-yg-FEs" firstAttribute="leading" secondItem="yjr-II-vpa" secondAttribute="leading" id="L7g-j3-y9H"/>
+                            <constraint firstItem="itO-CF-I3I" firstAttribute="baseline" secondItem="f8I-7u-RIF" secondAttribute="baseline" id="PvQ-az-GLD"/>
+                            <constraint firstItem="L6z-yg-FEs" firstAttribute="top" secondItem="gth-Dd-hHG" secondAttribute="bottom" constant="51" id="QzM-vm-6hv"/>
+                            <constraint firstItem="zbb-Zx-wTi" firstAttribute="top" secondItem="L6z-yg-FEs" secondAttribute="bottom" constant="69" id="RhJ-md-LSm"/>
+                            <constraint firstItem="L6z-yg-FEs" firstAttribute="leading" secondItem="YrM-LQ-fl7" secondAttribute="leading" id="XQ3-pH-nXd"/>
+                            <constraint firstItem="L6z-yg-FEs" firstAttribute="leading" secondItem="IZV-6x-dkO" secondAttribute="leadingMargin" id="eJh-Ew-T6P"/>
+                            <constraint firstItem="v3A-Dt-vD4" firstAttribute="leading" secondItem="L6z-yg-FEs" secondAttribute="trailing" constant="16" id="hHi-ET-RhX"/>
+                            <constraint firstItem="9uX-BI-0Fi" firstAttribute="trailing" secondItem="xVO-B7-HaA" secondAttribute="trailing" id="hvh-lr-UbK"/>
+                            <constraint firstItem="lSC-te-PnD" firstAttribute="bottom" secondItem="yjr-II-vpa" secondAttribute="bottom" constant="428" id="k7e-44-8Rp"/>
+                            <constraint firstItem="L6z-yg-FEs" firstAttribute="leading" secondItem="f8I-7u-RIF" secondAttribute="leading" id="lcy-LS-n7b"/>
+                            <constraint firstItem="lSC-te-PnD" firstAttribute="trailing" secondItem="itO-CF-I3I" secondAttribute="trailing" constant="27" id="nFR-KL-pbi"/>
+                            <constraint firstItem="zbb-Zx-wTi" firstAttribute="top" secondItem="9uX-BI-0Fi" secondAttribute="bottom" constant="49" id="p5Z-19-0jv"/>
+                            <constraint firstItem="9uX-BI-0Fi" firstAttribute="top" secondItem="gth-Dd-hHG" secondAttribute="bottom" constant="44" id="rSA-oI-x1N"/>
+                            <constraint firstItem="L6z-yg-FEs" firstAttribute="top" secondItem="IZV-6x-dkO" secondAttribute="top" constant="170" id="tRh-Ne-De0"/>
+                            <constraint firstItem="9uX-BI-0Fi" firstAttribute="top" secondItem="v3A-Dt-vD4" secondAttribute="top" id="ufC-jV-H3G"/>
+                            <constraint firstItem="L6z-yg-FEs" firstAttribute="leading" secondItem="zbb-Zx-wTi" secondAttribute="leading" id="xj5-Ge-JAE"/>
+                            <constraint firstItem="L6z-yg-FEs" firstAttribute="leading" secondItem="gth-Dd-hHG" secondAttribute="leading" id="zDv-Eg-mdp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="lSC-te-PnD"/>
                     </view>
                     <navigationItem key="navigationItem" id="UPS-og-ftl"/>
                     <connections>
                         <outlet property="contentTextView" destination="YrM-LQ-fl7" id="cVb-TA-wBK"/>
+                        <outlet property="datePicker" destination="778-DK-tor" id="Os1-Nd-puO"/>
                         <outlet property="titleTextField" destination="v3A-Dt-vD4" id="DJx-64-AUe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TgL-Pi-kHv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1958" y="-739"/>
+            <point key="canvasLocation" x="1771.0144927536232" y="-647.54464285714278"/>
         </scene>
         <!--メモ-->
         <scene sceneID="hCh-44-ghA">
@@ -342,86 +385,110 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="タイトルを入力" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r3v-cA-xAZ">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FGt-QL-6zm">
+                                <rect key="frame" x="0.0" y="813" width="414" height="44"/>
+                                <items>
+                                    <barButtonItem image="trash" catalog="system" id="441-Bc-ccu">
+                                        <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="deleteMemo" destination="yum-sz-saW" id="kNr-Ok-T34"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="タイトルを入力" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r3v-cA-xAZ">
                                 <rect key="frame" x="23" y="115" width="369" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="7T3-S0-5J2"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="提出期限" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUq-ex-Idq">
-                                <rect key="frame" x="25" y="176" width="70" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提出期限" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUq-ex-Idq">
+                                <rect key="frame" x="20" y="212" width="70" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="zMt-sv-2sP"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJc-SC-aU9">
-                                <rect key="frame" x="0.0" y="168" width="414" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="V5R-tj-XlX">
-                                <rect key="frame" x="20" y="451" width="374" height="411"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="V5R-tj-XlX">
+                                <rect key="frame" x="20" y="341" width="374" height="472"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="______________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kt-Kx-9Ox">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="______________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kt-Kx-9Ox">
                                 <rect key="frame" x="20" y="115" width="403" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="______________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48l-d2-baz">
-                                <rect key="frame" x="20" y="186" width="400" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="______________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48l-d2-baz">
+                                <rect key="frame" x="21" y="265" width="400" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6WL-B9-1bT">
-                                <rect key="frame" x="105" y="167" width="289" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="Ega-rP-Cdi">
-                                <rect key="frame" x="0.0" y="220" width="414" height="194"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="tertiaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="Ega-rP-Cdi">
+                                <rect key="frame" x="103" y="149" width="311" height="147"/>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="メモ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RqS-lC-q2m">
-                                <rect key="frame" x="20" y="422" width="35" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メモ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RqS-lC-q2m">
+                                <rect key="frame" x="21" y="322" width="35" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="48l-d2-baz" firstAttribute="top" secondItem="CBq-wV-fjt" secondAttribute="top" constant="265" id="0vH-i9-3DB"/>
+                            <constraint firstItem="TUq-ex-Idq" firstAttribute="leading" secondItem="V5R-tj-XlX" secondAttribute="leading" id="1aO-nE-Hfz"/>
+                            <constraint firstItem="r3v-cA-xAZ" firstAttribute="centerX" secondItem="CBq-wV-fjt" secondAttribute="centerX" id="4FB-mP-OGf"/>
+                            <constraint firstItem="48l-d2-baz" firstAttribute="leading" secondItem="oCA-Kt-gTc" secondAttribute="leading" constant="21" id="83p-X5-az8"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="FGt-QL-6zm" secondAttribute="bottom" constant="-44" id="8o5-iU-qZS"/>
+                            <constraint firstItem="Ega-rP-Cdi" firstAttribute="leading" secondItem="TUq-ex-Idq" secondAttribute="trailing" constant="13" id="Djb-JQ-P19"/>
+                            <constraint firstItem="5kt-Kx-9Ox" firstAttribute="leading" secondItem="TUq-ex-Idq" secondAttribute="leading" id="GYl-eM-n4q"/>
+                            <constraint firstItem="TUq-ex-Idq" firstAttribute="top" secondItem="5kt-Kx-9Ox" secondAttribute="bottom" constant="50" id="HD7-IV-18G"/>
+                            <constraint firstItem="Ega-rP-Cdi" firstAttribute="trailing" secondItem="FGt-QL-6zm" secondAttribute="trailing" id="NgV-f1-Q82"/>
+                            <constraint firstItem="48l-d2-baz" firstAttribute="leading" secondItem="RqS-lC-q2m" secondAttribute="leading" id="R5t-1i-Lg6"/>
+                            <constraint firstItem="5kt-Kx-9Ox" firstAttribute="leading" secondItem="CBq-wV-fjt" secondAttribute="leadingMargin" id="VGP-cq-cYJ"/>
+                            <constraint firstItem="FGt-QL-6zm" firstAttribute="top" secondItem="V5R-tj-XlX" secondAttribute="bottom" id="WL1-ec-Yxl"/>
+                            <constraint firstItem="48l-d2-baz" firstAttribute="centerX" secondItem="5kt-Kx-9Ox" secondAttribute="centerX" id="YmF-vx-oVw"/>
+                            <constraint firstItem="r3v-cA-xAZ" firstAttribute="top" secondItem="5kt-Kx-9Ox" secondAttribute="top" id="aDx-Bm-SQt"/>
+                            <constraint firstItem="RqS-lC-q2m" firstAttribute="top" secondItem="48l-d2-baz" secondAttribute="bottom" constant="18" id="aQ4-bt-CNN"/>
+                            <constraint firstItem="r3v-cA-xAZ" firstAttribute="top" secondItem="oCA-Kt-gTc" secondAttribute="top" constant="27" id="e9a-Pv-1Mf"/>
+                            <constraint firstItem="TUq-ex-Idq" firstAttribute="centerY" secondItem="Ega-rP-Cdi" secondAttribute="centerY" id="fOd-it-NLE"/>
+                            <constraint firstItem="V5R-tj-XlX" firstAttribute="top" secondItem="48l-d2-baz" secondAttribute="bottom" constant="37" id="hmp-Ij-MSS"/>
+                            <constraint firstItem="48l-d2-baz" firstAttribute="top" secondItem="TUq-ex-Idq" secondAttribute="bottom" constant="32" id="nof-5i-sYy"/>
+                            <constraint firstItem="r3v-cA-xAZ" firstAttribute="centerX" secondItem="FGt-QL-6zm" secondAttribute="centerX" id="ohH-xp-jTW"/>
+                            <constraint firstItem="r3v-cA-xAZ" firstAttribute="leading" secondItem="oCA-Kt-gTc" secondAttribute="leading" constant="23" id="tAp-65-2Mc"/>
+                            <constraint firstItem="Ega-rP-Cdi" firstAttribute="top" secondItem="r3v-cA-xAZ" secondAttribute="bottom" id="unr-J6-rBb"/>
+                            <constraint firstItem="Ega-rP-Cdi" firstAttribute="trailing" secondItem="oCA-Kt-gTc" secondAttribute="trailing" id="uxl-jj-DtU"/>
+                            <constraint firstItem="V5R-tj-XlX" firstAttribute="bottom" secondItem="oCA-Kt-gTc" secondAttribute="bottom" id="wbJ-b0-Ow3"/>
+                            <constraint firstItem="r3v-cA-xAZ" firstAttribute="centerX" secondItem="V5R-tj-XlX" secondAttribute="centerX" id="wma-jv-tRc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="oCA-Kt-gTc"/>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Title" id="FTw-gP-ba8">
                         <barButtonItem key="rightBarButtonItem" title="完了" id="Q7S-Iv-sg3">
                             <connections>
-                                <action selector="saveMemo" destination="yum-sz-saW" id="xWa-GJ-GPY"/>
+                                <action selector="saveMemo" destination="yum-sz-saW" id="UZY-uI-Nt6"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="contentTextView" destination="V5R-tj-XlX" id="VRN-dK-ahW"/>
-                        <outlet property="date" destination="Ega-rP-Cdi" id="skv-2M-cuV"/>
-                        <outlet property="titleTextField" destination="r3v-cA-xAZ" id="wD5-PA-6B3"/>
+                        <outlet property="datePicker" destination="Ega-rP-Cdi" id="fqY-nh-QLt"/>
+                        <outlet property="titleTextField" destination="r3v-cA-xAZ" id="Osp-r9-8kZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eeb-DK-rMt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2256.521739130435" y="-9.375"/>
+            <point key="canvasLocation" x="2296" y="-1"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pVE-Aa-aYd">
@@ -444,9 +511,9 @@
     </scenes>
     <resources>
         <image name="plus" catalog="system" width="64" height="56"/>
+        <image name="trash" catalog="system" width="60" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="LpY-5a-uNG"/>
         <segue reference="Rol-PV-Rby"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -10,13 +10,39 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var mathematicsButton: UIButton!
+    @IBOutlet weak var japaneseButton: UIButton!
+    @IBOutlet weak var englishButton: UIButton!
+    @IBOutlet weak var scienceButton: UIButton!
+    @IBOutlet weak var socialstudiesButton: UIButton!
+    @IBOutlet weak var peButton: UIButton!
+    @IBOutlet weak var artButton: UIButton!
+    @IBOutlet weak var musicButton: UIButton!
+    @IBOutlet weak var technologyButton: UIButton!
+    @IBOutlet weak var homeeconomicsButton: UIButton!
+    @IBOutlet weak var otherButton: UIButton!
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    super.viewDidLoad()
+    
+        mathematicsButton.layer.cornerRadius = 10.0 // 角丸のサイズ
+        japaneseButton.layer.cornerRadius = 10.0 // 角丸のサイズ
+        englishButton.layer.cornerRadius = 10.0 // 角丸のサイズ
+        scienceButton.layer.cornerRadius = 10.0 // 角丸のサイズ
+        socialstudiesButton.layer.cornerRadius = 10.0 // 角丸のサイズ
+        peButton.layer.cornerRadius = 10.0 // 角丸のサイズ
+        artButton.layer.cornerRadius = 10.0 // 角丸のサイズ
+        musicButton.layer.cornerRadius = 10.0 // 角丸のサイズ
+        technologyButton.layer.cornerRadius = 10.0 // 角丸のサイズ
+        homeeconomicsButton.layer.cornerRadius = 10.0 // 角丸のサイズ
+        otherButton.layer.cornerRadius = 10.0 // 角丸のサイズ
+    
+    
     }
+        
     
     @IBAction func mathematics() {
-        
+
     }
 
     @IBAction func japanese() {

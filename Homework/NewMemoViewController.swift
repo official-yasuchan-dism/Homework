@@ -8,12 +8,11 @@
 
 import UIKit
 
-
-
 class NewMemoViewController: UIViewController, UITextFieldDelegate {
 
      @IBOutlet var titleTextField: UITextField!
-     @IBOutlet var contentTextView: UITextView!
+     @IBOutlet var datePicker: UIDatePicker!
+     @IBOutlet var contentTextView: UITextView! 
 
      var saveData: UserDefaults = UserDefaults.standard
 
@@ -26,6 +25,7 @@ class NewMemoViewController: UIViewController, UITextFieldDelegate {
      
     @IBAction func saveMemo() {
         saveData.set(titleTextField.text, forKey: "title")
+        saveData.set(datePicker, forKey: "date")
         saveData.set(contentTextView.text, forKey: "content")
         
         self.dismiss(animated: true, completion: nil)
@@ -45,12 +45,9 @@ class NewMemoViewController: UIViewController, UITextFieldDelegate {
                 present(alert, animated: true, completion: nil)
 
     }
-    
-   
-    
+
     /*
     // MARK: - Navigation
-
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.

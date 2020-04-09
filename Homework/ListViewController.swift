@@ -16,11 +16,9 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     
      var saveData: UserDefaults = UserDefaults.standard
     @IBOutlet var titleTextField: UITextField!
-    @IBOutlet var contentTextView: UITextView!
+    @IBOutlet var datePicker: UIDatePicker!
+    @IBOutlet var textView: UITextView!
     var titleText: String!
-    
-    
-
 
      override func viewDidLoad() {
          super.viewDidLoad()
@@ -42,7 +40,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
          return 20
      }
-     
+
      //ID付きセルの取得、セル付属のTextLabelに「テスト」と表示
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
          let cell = UITableViewCell()
@@ -69,8 +67,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
             let MemoVC: MemoViewController = segue.destination as! MemoViewController
             
              //senderははAnyでInt整数
-             MemoVC.number = sender as! Int
-            
+            MemoVC.number = sender as? Int
             
         }
     }
