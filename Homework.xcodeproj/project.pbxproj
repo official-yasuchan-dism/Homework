@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA1261F6245C8A780000A06D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA1261F5245C8A780000A06D /* Main.storyboard */; };
 		AAAF1CE323EFE4250039077D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAF1CE223EFE4250039077D /* AppDelegate.swift */; };
 		AAAF1CE523EFE4250039077D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAF1CE423EFE4250039077D /* SceneDelegate.swift */; };
 		AAAF1CE723EFE4250039077D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAF1CE623EFE4250039077D /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA1261F5245C8A780000A06D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		AAAF1CDF23EFE4250039077D /* Homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAAF1CE223EFE4250039077D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAAF1CE423EFE4250039077D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				AAAF1D1223EFE43E0039077D /* ListViewController.swift */,
 				AAAF1D1423EFE4510039077D /* MemoViewController.swift */,
 				AAAF1D1623EFE45F0039077D /* NewMemoViewController.swift */,
+				AA1261F5245C8A780000A06D /* Main.storyboard */,
 				AAAF1CEB23EFE42B0039077D /* Assets.xcassets */,
 				AAAF1CED23EFE42B0039077D /* LaunchScreen.storyboard */,
 				AAAF1CF023EFE42B0039077D /* Info.plist */,
@@ -238,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA1261F6245C8A780000A06D /* Main.storyboard in Resources */,
 				AAAF1CEF23EFE42B0039077D /* LaunchScreen.storyboard in Resources */,
 				AAAF1CEC23EFE42B0039077D /* Assets.xcassets in Resources */,
 			);
