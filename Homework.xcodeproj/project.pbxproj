@@ -10,7 +10,6 @@
 		AAAF1CE323EFE4250039077D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAF1CE223EFE4250039077D /* AppDelegate.swift */; };
 		AAAF1CE523EFE4250039077D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAF1CE423EFE4250039077D /* SceneDelegate.swift */; };
 		AAAF1CE723EFE4250039077D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAF1CE623EFE4250039077D /* ViewController.swift */; };
-		AAAF1CEA23EFE4250039077D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAAF1CE823EFE4250039077D /* Main.storyboard */; };
 		AAAF1CEC23EFE42B0039077D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAAF1CEB23EFE42B0039077D /* Assets.xcassets */; };
 		AAAF1CEF23EFE42B0039077D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAAF1CED23EFE42B0039077D /* LaunchScreen.storyboard */; };
 		AAAF1CFA23EFE42B0039077D /* HomeworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAF1CF923EFE42B0039077D /* HomeworkTests.swift */; };
@@ -42,7 +41,6 @@
 		AAAF1CE223EFE4250039077D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAAF1CE423EFE4250039077D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AAAF1CE623EFE4250039077D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AAAF1CE923EFE4250039077D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AAAF1CEB23EFE42B0039077D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAAF1CEE23EFE42B0039077D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAAF1CF023EFE42B0039077D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -111,7 +109,6 @@
 				AAAF1D1223EFE43E0039077D /* ListViewController.swift */,
 				AAAF1D1423EFE4510039077D /* MemoViewController.swift */,
 				AAAF1D1623EFE45F0039077D /* NewMemoViewController.swift */,
-				AAAF1CE823EFE4250039077D /* Main.storyboard */,
 				AAAF1CEB23EFE42B0039077D /* Assets.xcassets */,
 				AAAF1CED23EFE42B0039077D /* LaunchScreen.storyboard */,
 				AAAF1CF023EFE42B0039077D /* Info.plist */,
@@ -243,7 +240,6 @@
 			files = (
 				AAAF1CEF23EFE42B0039077D /* LaunchScreen.storyboard in Resources */,
 				AAAF1CEC23EFE42B0039077D /* Assets.xcassets in Resources */,
-				AAAF1CEA23EFE4250039077D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,14 +305,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AAAF1CE823EFE4250039077D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AAAF1CE923EFE4250039077D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AAAF1CED23EFE42B0039077D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -446,8 +434,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = X5443339WL;
 				INFOPLIST_FILE = Homework/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,6 +444,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.Homework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -464,8 +454,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = X5443339WL;
 				INFOPLIST_FILE = Homework/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -473,6 +464,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.Homework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

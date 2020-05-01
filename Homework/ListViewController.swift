@@ -9,6 +9,14 @@
 import UIKit
 
 class ListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
+        
+        cell?.textLabel?.text = "テスト"
+        
+        return cell!
+    }
+    
     
     
     //StoryBordでのTableViewの宣言
@@ -39,13 +47,6 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
      //セルの数　設定
      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
          return 20
-     }
-
-     //ID付きセルの取得、セル付属のTextLabelに「テスト」と表示
-     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-         let cell = UITableViewCell()
-         cell.textLabel?.text = ""
-         return cell
      }
      
     @IBAction func edit() {

@@ -36,10 +36,7 @@ class ViewController: UIViewController {
         technologyButton.layer.cornerRadius = 10.0 // 角丸のサイズ
         homeeconomicsButton.layer.cornerRadius = 10.0 // 角丸のサイズ
         otherButton.layer.cornerRadius = 10.0 // 角丸のサイズ
-    
-    
     }
-        
     
     @IBAction func mathematics() {
 
@@ -85,9 +82,8 @@ class ViewController: UIViewController {
         
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! ListViewController
-        vc.titleText = segue.identifier!
+    //override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    //    let vc = segue.destination as! ListViewController
+    //    vc.titleText = segue.identifier!
     }
-}
 
