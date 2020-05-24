@@ -53,6 +53,9 @@
                         <viewLayoutGuide key="safeArea" id="891-e9-sd6"/>
                     </view>
                     <navigationItem key="navigationItem" id="ESJ-D2-L7Q"/>
+                    <connections>
+                        <outlet property="cancelButton" destination="mVk-to-3Ov" id="VOp-RU-RwI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gHT-Hi-ZpF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
