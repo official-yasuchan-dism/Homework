@@ -18,6 +18,7 @@
 		AAAF1D1323EFE43E0039077D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAF1D1223EFE43E0039077D /* ListViewController.swift */; };
 		AAAF1D1523EFE4510039077D /* MemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAF1D1423EFE4510039077D /* MemoViewController.swift */; };
 		AAAF1D1723EFE45F0039077D /* NewMemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAF1D1623EFE45F0039077D /* NewMemoViewController.swift */; };
+		AAE4F33B246715C7001F119E /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4F33A246715C7001F119E /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		AAAF1D1223EFE43E0039077D /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		AAAF1D1423EFE4510039077D /* MemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoViewController.swift; sourceTree = "<group>"; };
 		AAAF1D1623EFE45F0039077D /* NewMemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMemoViewController.swift; sourceTree = "<group>"; };
+		AAE4F33A246715C7001F119E /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				AAAF1D1223EFE43E0039077D /* ListViewController.swift */,
 				AAAF1D1423EFE4510039077D /* MemoViewController.swift */,
 				AAAF1D1623EFE45F0039077D /* NewMemoViewController.swift */,
+				AAE4F33A246715C7001F119E /* AddViewController.swift */,
 				AA1261F5245C8A780000A06D /* Main.storyboard */,
 				AAAF1CEB23EFE42B0039077D /* Assets.xcassets */,
 				AAAF1CED23EFE42B0039077D /* LaunchScreen.storyboard */,
@@ -270,6 +273,7 @@
 			files = (
 				AAAF1CE723EFE4250039077D /* ViewController.swift in Sources */,
 				AAAF1CE323EFE4250039077D /* AppDelegate.swift in Sources */,
+				AAE4F33B246715C7001F119E /* AddViewController.swift in Sources */,
 				AAAF1D1523EFE4510039077D /* MemoViewController.swift in Sources */,
 				AAAF1D1723EFE45F0039077D /* NewMemoViewController.swift in Sources */,
 				AAAF1D1323EFE43E0039077D /* ListViewController.swift in Sources */,

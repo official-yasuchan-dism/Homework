@@ -20,7 +20,7 @@ class MemoViewController: UIViewController, UITextFieldDelegate {
     
     var saveData: UserDefaults = UserDefaults.standard
     var number: Int!
-    //データ保存
+    //データの保存
     
     override func viewDidLoad() {
         super.viewDidLoad()
