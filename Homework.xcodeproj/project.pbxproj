@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AA1261F6245C8A780000A06D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA1261F5245C8A780000A06D /* Main.storyboard */; };
+		AA97BB5F24821CC2007F46EF /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA97BB5E24821CC2007F46EF /* NewViewController.swift */; };
 		AAAF1CE323EFE4250039077D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAF1CE223EFE4250039077D /* AppDelegate.swift */; };
 		AAAF1CE523EFE4250039077D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAF1CE423EFE4250039077D /* SceneDelegate.swift */; };
 		AAAF1CE723EFE4250039077D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAF1CE623EFE4250039077D /* ViewController.swift */; };
@@ -16,8 +17,6 @@
 		AAAF1CFA23EFE42B0039077D /* HomeworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAF1CF923EFE42B0039077D /* HomeworkTests.swift */; };
 		AAAF1D0523EFE42B0039077D /* HomeworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAF1D0423EFE42B0039077D /* HomeworkUITests.swift */; };
 		AAAF1D1323EFE43E0039077D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAF1D1223EFE43E0039077D /* ListViewController.swift */; };
-		AAAF1D1523EFE4510039077D /* MemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAF1D1423EFE4510039077D /* MemoViewController.swift */; };
-		AAAF1D1723EFE45F0039077D /* NewMemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAF1D1623EFE45F0039077D /* NewMemoViewController.swift */; };
 		AAE4F33B246715C7001F119E /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4F33A246715C7001F119E /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		AA1261F5245C8A780000A06D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		AA97BB5E24821CC2007F46EF /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		AAAF1CDF23EFE4250039077D /* Homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAAF1CE223EFE4250039077D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAAF1CE423EFE4250039077D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,8 +54,6 @@
 		AAAF1D0423EFE42B0039077D /* HomeworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkUITests.swift; sourceTree = "<group>"; };
 		AAAF1D0623EFE42B0039077D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAAF1D1223EFE43E0039077D /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
-		AAAF1D1423EFE4510039077D /* MemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoViewController.swift; sourceTree = "<group>"; };
-		AAAF1D1623EFE45F0039077D /* NewMemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMemoViewController.swift; sourceTree = "<group>"; };
 		AAE4F33A246715C7001F119E /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,8 +110,7 @@
 				AAAF1CE623EFE4250039077D /* ViewController.swift */,
 				AAE4F33A246715C7001F119E /* AddViewController.swift */,
 				AAAF1D1223EFE43E0039077D /* ListViewController.swift */,
-				AAAF1D1423EFE4510039077D /* MemoViewController.swift */,
-				AAAF1D1623EFE45F0039077D /* NewMemoViewController.swift */,
+				AA97BB5E24821CC2007F46EF /* NewViewController.swift */,
 				AA1261F5245C8A780000A06D /* Main.storyboard */,
 				AAAF1CEB23EFE42B0039077D /* Assets.xcassets */,
 				AAAF1CED23EFE42B0039077D /* LaunchScreen.storyboard */,
@@ -274,8 +271,7 @@
 				AAAF1CE723EFE4250039077D /* ViewController.swift in Sources */,
 				AAAF1CE323EFE4250039077D /* AppDelegate.swift in Sources */,
 				AAE4F33B246715C7001F119E /* AddViewController.swift in Sources */,
-				AAAF1D1523EFE4510039077D /* MemoViewController.swift in Sources */,
-				AAAF1D1723EFE45F0039077D /* NewMemoViewController.swift in Sources */,
+				AA97BB5F24821CC2007F46EF /* NewViewController.swift in Sources */,
 				AAAF1D1323EFE43E0039077D /* ListViewController.swift in Sources */,
 				AAAF1CE523EFE4250039077D /* SceneDelegate.swift in Sources */,
 			);

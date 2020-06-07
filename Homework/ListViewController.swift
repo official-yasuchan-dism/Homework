@@ -45,9 +45,11 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     // エンターキーで検索
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar){
-        searchBar.resignFirstResponder()
-        searchBar.setShowsCancelButton(false, animated: true)
-    }
+        guard let searchText = searchBar.text else {
+                   return
+               }
+               print(searchText)
+       }
     
     // 入力された文字出力
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {

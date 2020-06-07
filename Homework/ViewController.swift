@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController,UISearchBarDelegate {
-
+    
     @IBOutlet weak var mathematicsButton: UIButton!
     @IBOutlet weak var japaneseButton: UIButton!
     @IBOutlet weak var englishButton: UIButton!
