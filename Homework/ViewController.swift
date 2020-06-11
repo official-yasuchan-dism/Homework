@@ -15,8 +15,6 @@ class ViewController: UIViewController,UISearchBarDelegate {
     @IBOutlet weak var englishButton: UIButton!
     @IBOutlet weak var scienceButton: UIButton!
     @IBOutlet weak var socialstudiesButton: UIButton!
-    //@IBOutlet weak var plusButton: UIButton!
-    //@IBOutlet weak var editButton: UIButton!
     @IBOutlet weak var parentStackView: UIStackView!
     @IBOutlet weak var searchBar: UISearchBar!
     
@@ -26,7 +24,7 @@ class ViewController: UIViewController,UISearchBarDelegate {
     super.viewDidLoad()
         
         searchBar.delegate = self
-        
+
         //mathematicsButton.layer.cornerRadius = 10.0 // 角丸のサイズ
         //japaneseButton.layer.cornerRadius = 10.0 // 角丸のサイズ
         //englishButton.layer.cornerRadius = 10.0 // 角丸のサイズ
@@ -62,6 +60,8 @@ class ViewController: UIViewController,UISearchBarDelegate {
     // 入力された文字出力
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         print(searchText)
+
+        
     }
     
     func layoutButton() {
@@ -74,12 +74,12 @@ class ViewController: UIViewController,UISearchBarDelegate {
                 stackView.distribution = .fillEqually
                 let button = UIButton()
                 button.setTitle(subjectsArray[i], for: .normal)
-                button.backgroundColor = .black
+                button.backgroundColor = .blue
                 stackView.addArrangedSubview(button)
                 if (i + 1) < subjectsArray.count {
                     let button2 = UIButton()
                     button2.setTitle(subjectsArray[i + 1], for: .normal)
-                    button2.backgroundColor = .black
+                    button2.backgroundColor = .purple
                     stackView.addArrangedSubview(button2)
                 } else {
                     let marginView = UIView()
@@ -101,9 +101,9 @@ class ViewController: UIViewController,UISearchBarDelegate {
     }
     
     @IBAction func english() {
-    
+     
     }
-
+ 
     @IBAction func science() {
         
     }

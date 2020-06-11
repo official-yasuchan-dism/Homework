@@ -74,39 +74,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="検索" translatesAutoresizingMaskIntoConstraints="NO" id="VkK-50-AR5">
-                                <rect key="frame" x="11" y="148" width="392" height="56"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EqZ-cy-Oxn">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EqZ-cy-Oxn">
                                 <rect key="frame" x="0.0" y="204" width="414" height="692"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Uba-fB-1Wq">
-                                        <rect key="frame" x="20" y="20" width="374" height="672"/>
+                                        <rect key="frame" x="20" y="10" width="374" height="682"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="672" placeholder="YES" id="3aD-Ne-na0"/>
+                                            <constraint firstAttribute="width" constant="374" id="x3f-BV-K1h"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="nth-sX-Fbj" firstAttribute="trailing" secondItem="Uba-fB-1Wq" secondAttribute="trailing" constant="20" id="FHd-De-IrU"/>
-                                    <constraint firstItem="Uba-fB-1Wq" firstAttribute="bottom" secondItem="nth-sX-Fbj" secondAttribute="bottom" id="dto-8I-Sh4"/>
+                                    <constraint firstItem="Uba-fB-1Wq" firstAttribute="bottom" secondItem="nth-sX-Fbj" secondAttribute="bottom" placeholder="YES" id="dto-8I-Sh4"/>
                                     <constraint firstItem="Uba-fB-1Wq" firstAttribute="leading" secondItem="nth-sX-Fbj" secondAttribute="leading" constant="20" id="faY-QR-Plv"/>
-                                    <constraint firstItem="Uba-fB-1Wq" firstAttribute="top" secondItem="nth-sX-Fbj" secondAttribute="top" constant="20" id="gIO-Mq-tsx"/>
+                                    <constraint firstItem="Uba-fB-1Wq" firstAttribute="top" secondItem="nth-sX-Fbj" secondAttribute="top" constant="10" id="qPa-Qh-SCY"/>
+                                    <constraint firstAttribute="trailing" secondItem="Uba-fB-1Wq" secondAttribute="trailing" constant="20" id="w30-RU-ko5"/>
+                                    <constraint firstAttribute="bottom" secondItem="Uba-fB-1Wq" secondAttribute="bottom" id="zpk-8u-uwO"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="8VR-b0-ung"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="nth-sX-Fbj"/>
                             </scrollView>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="検索" translatesAutoresizingMaskIntoConstraints="NO" id="uQl-I9-2Rq">
+                                <rect key="frame" x="12" y="135" width="390" height="69"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="VkK-50-AR5" firstAttribute="top" secondItem="fPv-9x-rGF" secondAttribute="top" constant="148" id="4Qu-I7-fdk"/>
-                            <constraint firstItem="8RQ-Ow-rkx" firstAttribute="trailing" secondItem="VkK-50-AR5" secondAttribute="trailing" constant="11" id="Eqm-bF-Ava"/>
-                            <constraint firstItem="EqZ-cy-Oxn" firstAttribute="top" secondItem="VkK-50-AR5" secondAttribute="bottom" id="N6I-jf-cTP"/>
-                            <constraint firstItem="EqZ-cy-Oxn" firstAttribute="leading" secondItem="8RQ-Ow-rkx" secondAttribute="leading" id="OEg-fg-aHD"/>
+                            <constraint firstAttribute="bottom" secondItem="uQl-I9-2Rq" secondAttribute="bottom" constant="692" id="Ib1-Iz-5zX"/>
+                            <constraint firstItem="uQl-I9-2Rq" firstAttribute="top" secondItem="fPv-9x-rGF" secondAttribute="top" constant="135" id="Prg-Op-9Vm"/>
                             <constraint firstAttribute="bottom" secondItem="EqZ-cy-Oxn" secondAttribute="bottom" id="RV4-A1-0a8"/>
-                            <constraint firstItem="EqZ-cy-Oxn" firstAttribute="trailing" secondItem="8RQ-Ow-rkx" secondAttribute="trailing" id="Z8K-FM-7wB"/>
-                            <constraint firstItem="VkK-50-AR5" firstAttribute="leading" secondItem="8RQ-Ow-rkx" secondAttribute="leading" constant="11" id="rTq-Q9-ecK"/>
+                            <constraint firstItem="8RQ-Ow-rkx" firstAttribute="trailing" secondItem="uQl-I9-2Rq" secondAttribute="trailing" constant="12" id="Uft-3U-cn8"/>
+                            <constraint firstItem="EqZ-cy-Oxn" firstAttribute="centerX" secondItem="uQl-I9-2Rq" secondAttribute="centerX" id="UyJ-hr-5Nv"/>
+                            <constraint firstItem="uQl-I9-2Rq" firstAttribute="leading" secondItem="8RQ-Ow-rkx" secondAttribute="leading" constant="12" id="ez4-9X-WVq"/>
+                            <constraint firstItem="EqZ-cy-Oxn" firstAttribute="top" secondItem="uQl-I9-2Rq" secondAttribute="bottom" id="sc6-Di-7jS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8RQ-Ow-rkx"/>
                     </view>
@@ -119,7 +121,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="parentStackView" destination="Uba-fB-1Wq" id="KZZ-Iv-KSX"/>
-                        <outlet property="searchBar" destination="VkK-50-AR5" id="qhB-kK-KHP"/>
+                        <outlet property="searchBar" destination="uQl-I9-2Rq" id="N5j-zx-00G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IoD-bO-wIZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -135,7 +137,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Tg9-DP-qI1">
-                                <rect key="frame" x="0.0" y="217" width="414" height="613"/>
+                                <rect key="frame" x="0.0" y="222" width="414" height="613"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="613" id="IXd-PO-Yho"/>
@@ -152,7 +154,7 @@
                                 </prototypes>
                             </tableView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6AF-Kw-Pke">
-                                <rect key="frame" x="0.0" y="830" width="414" height="49"/>
+                                <rect key="frame" x="0.0" y="835" width="414" height="49"/>
                                 <items>
                                     <barButtonItem width="349" style="plain" systemItem="fixedSpace" id="YzW-Tk-ZlE"/>
                                     <barButtonItem title="Item" image="square.and.pencil" catalog="system" id="eyX-Ee-Pek">
@@ -163,7 +165,7 @@
                                 </items>
                             </toolbar>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="検索" translatesAutoresizingMaskIntoConstraints="NO" id="FJS-Gv-UTL">
-                                <rect key="frame" x="12" y="134" width="390" height="56"/>
+                                <rect key="frame" x="12" y="139" width="390" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                         </subviews>
@@ -172,8 +174,8 @@
                             <constraint firstItem="Tg9-DP-qI1" firstAttribute="leading" secondItem="n0W-T9-6pe" secondAttribute="leading" id="5dI-vv-QGL"/>
                             <constraint firstItem="Tg9-DP-qI1" firstAttribute="centerX" secondItem="FJS-Gv-UTL" secondAttribute="centerX" id="66g-dG-Q1L"/>
                             <constraint firstItem="Tg9-DP-qI1" firstAttribute="leading" secondItem="6AF-Kw-Pke" secondAttribute="leading" id="85X-Df-afo"/>
+                            <constraint firstItem="FJS-Gv-UTL" firstAttribute="top" secondItem="n0W-T9-6pe" secondAttribute="top" constant="95" id="87I-ES-H9b"/>
                             <constraint firstItem="FJS-Gv-UTL" firstAttribute="leading" secondItem="n0W-T9-6pe" secondAttribute="leading" constant="12" id="8Cv-gH-ixH"/>
-                            <constraint firstItem="FJS-Gv-UTL" firstAttribute="top" secondItem="n0W-T9-6pe" secondAttribute="top" constant="90" id="Dne-Dc-xUO"/>
                             <constraint firstItem="6AF-Kw-Pke" firstAttribute="top" secondItem="Tg9-DP-qI1" secondAttribute="bottom" id="HPK-8v-NTy"/>
                             <constraint firstItem="Tg9-DP-qI1" firstAttribute="trailing" secondItem="6AF-Kw-Pke" secondAttribute="trailing" id="tVN-tL-SrO"/>
                             <constraint firstItem="Tg9-DP-qI1" firstAttribute="top" secondItem="FJS-Gv-UTL" secondAttribute="bottom" constant="27" id="tmd-bz-aD7"/>
@@ -348,7 +350,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="TextView" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bVg-Wy-Ntm">
-                                <rect key="frame" x="20" y="247" width="374" height="561"/>
+                                <rect key="frame" x="20" y="247" width="374" height="595"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -356,7 +358,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QCO-cD-Wym">
-                                <rect key="frame" x="20" y="247" width="374" height="561"/>
+                                <rect key="frame" x="20" y="247" width="374" height="595"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <viewLayoutGuide key="contentLayoutGuide" id="NB1-QG-urC"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="Bse-38-TX3"/>

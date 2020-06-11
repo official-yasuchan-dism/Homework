@@ -16,6 +16,8 @@ class AddViewController: UIViewController {
     
     var saveData: UserDefaults = UserDefaults.standard
     
+    private var titleText: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,7 +25,7 @@ class AddViewController: UIViewController {
         
         titleTextField.text = saveData.object(forKey: "title") as? String
     }
-    
+        
     @IBAction func addSubject() {
     saveData.set(titleTextField.text, forKey: "title")
         

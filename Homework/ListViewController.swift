@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource,UISearchBarDelegate {
+class ListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
@@ -25,12 +25,14 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
          super.viewDidLoad()
         
         searchBar.delegate = self
+        }
         
-     }
      
      override func didReceiveMemoryWarning() {
-         super.didReceiveMemoryWarning()
+         super.didReceiveMemoryWarning() 
      }
+    
+    
     
     // 検索バー編集開始時にキャンセルボタン有効化
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar){
