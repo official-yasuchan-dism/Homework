@@ -13,6 +13,7 @@ class AddViewController: UIViewController {
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet var titleTextField: UITextField!
     @IBOutlet weak var addButton: UIButton!
+    @IBOutlet weak var colorButton: UIButton!
     
     var saveData: UserDefaults = UserDefaults.standard
     
@@ -21,9 +22,12 @@ class AddViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        colorButton.layer.cornerRadius = 10.0
+        
         // Do any additional setup after loading the view.
         
         titleTextField.text = saveData.object(forKey: "title") as? String
+        
     }
         
     @IBAction func addSubject() {

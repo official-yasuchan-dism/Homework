@@ -4,9 +4,68 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Color View Controller-->
+        <scene sceneID="ENI-ff-8dD">
+            <objects>
+                <viewController id="S4t-E4-r1Y" customClass="ColorViewController" customModule="Homework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C4s-iV-syy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RFr-N4-eOB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="カラー" id="29W-uN-sej">
+                                        <barButtonItem key="rightBarButtonItem" title="完了" id="T3J-Sb-1pI">
+                                            <connections>
+                                                <action selector="complete" destination="S4t-E4-r1Y" id="cwU-Hy-2QJ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wand.and.stars.inverse" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Kmx-st-Jc5">
+                                <rect key="frame" x="122" y="268" width="171" height="151"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="FnH-gp-A7z">
+                                <rect key="frame" x="0.0" y="579" width="414" height="229"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4mp-mc-K2X">
+                                    <size key="itemSize" width="91" height="80"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="cis-J8-voQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="91" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8dS-KL-1B4">
+                                            <rect key="frame" x="0.0" y="0.0" width="91" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="91" height="80"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Br2-PW-Vfe"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bSI-76-SDi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wXW-6f-Unc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-12062.318840579712" y="-8192.4107142857138"/>
+        </scene>
         <!--Add View Controller-->
         <scene sceneID="JLP-hN-KgO">
             <objects>
@@ -38,17 +97,21 @@
                                     <action selector="cancel" destination="52l-qv-ZnN" eventType="touchDown" id="LTa-vC-Gd0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="名称:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxK-q7-rSe">
-                                <rect key="frame" x="20" y="133" width="38" height="20"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQ9-tg-Pgz">
+                                <rect key="frame" x="29" y="130" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L2T-rL-qZP">
-                                <rect key="frame" x="66" y="126" width="328" height="34"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" image="wand.and.stars.inverse" catalog="system"/>
+                                <connections>
+                                    <segue destination="S4t-E4-r1Y" kind="show" id="BzU-Sn-jzF"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="テキストを入力" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L2T-rL-qZP">
+                                <rect key="frame" x="82" y="133" width="312" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
@@ -59,12 +122,13 @@
                     <connections>
                         <outlet property="addButton" destination="wO7-so-EE5" id="8ob-fV-lJf"/>
                         <outlet property="cancelButton" destination="mVk-to-3Ov" id="VOp-RU-RwI"/>
+                        <outlet property="colorButton" destination="lQ9-tg-Pgz" id="iiO-Nx-w0d"/>
                         <outlet property="titleTextField" destination="L2T-rL-qZP" id="bwq-zL-EB5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gHT-Hi-ZpF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-11336" y="-8192"/>
+            <point key="canvasLocation" x="-11336.231884057972" y="-8192.4107142857138"/>
         </scene>
         <!--教科-->
         <scene sceneID="MBl-3g-fBm">
@@ -113,11 +177,14 @@
                         <viewLayoutGuide key="safeArea" id="8RQ-Ow-rkx"/>
                     </view>
                     <navigationItem key="navigationItem" title="教科" id="J2b-Ep-9xv">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus.circle.fill" catalog="system" id="vLB-rN-xjm">
-                            <connections>
-                                <segue destination="52l-qv-ZnN" kind="presentation" id="xpc-Pr-khd"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Item" image="plus" catalog="system" id="vLB-rN-xjm">
+                                <connections>
+                                    <segue destination="52l-qv-ZnN" kind="presentation" id="xpc-Pr-khd"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="選択" id="alC-Vr-SNu"/>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="parentStackView" destination="Uba-fB-1Wq" id="KZZ-Iv-KSX"/>
@@ -201,7 +268,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3VU-Ot-FjV" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="zf0-Ru-Rd1">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="104.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -394,7 +461,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
         <image name="square.and.pencil" catalog="system" width="128" height="118"/>
+        <image name="wand.and.stars.inverse" catalog="system" width="128" height="113"/>
     </resources>
 </document>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AA1261F6245C8A780000A06D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA1261F5245C8A780000A06D /* Main.storyboard */; };
+		AA4877D424B1AB5700A1EC53 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4877D324B1AB5700A1EC53 /* ColorViewController.swift */; };
 		AA97BB5F24821CC2007F46EF /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA97BB5E24821CC2007F46EF /* NewViewController.swift */; };
 		AAAF1CE323EFE4250039077D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAF1CE223EFE4250039077D /* AppDelegate.swift */; };
 		AAAF1CE523EFE4250039077D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAF1CE423EFE4250039077D /* SceneDelegate.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		AA1261F5245C8A780000A06D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		AA4877D324B1AB5700A1EC53 /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 		AA97BB5E24821CC2007F46EF /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		AAAF1CDF23EFE4250039077D /* Homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAAF1CE223EFE4250039077D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				AAE4F33A246715C7001F119E /* AddViewController.swift */,
 				AAAF1D1223EFE43E0039077D /* ListViewController.swift */,
 				AA97BB5E24821CC2007F46EF /* NewViewController.swift */,
+				AA4877D324B1AB5700A1EC53 /* ColorViewController.swift */,
 				AA1261F5245C8A780000A06D /* Main.storyboard */,
 				AAAF1CEB23EFE42B0039077D /* Assets.xcassets */,
 				AAAF1CED23EFE42B0039077D /* LaunchScreen.storyboard */,
@@ -272,6 +275,7 @@
 				AAAF1CE323EFE4250039077D /* AppDelegate.swift in Sources */,
 				AAE4F33B246715C7001F119E /* AddViewController.swift in Sources */,
 				AA97BB5F24821CC2007F46EF /* NewViewController.swift in Sources */,
+				AA4877D424B1AB5700A1EC53 /* ColorViewController.swift in Sources */,
 				AAAF1D1323EFE43E0039077D /* ListViewController.swift in Sources */,
 				AAAF1CE523EFE4250039077D /* SceneDelegate.swift in Sources */,
 			);

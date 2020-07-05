@@ -24,7 +24,7 @@ class ViewController: UIViewController,UISearchBarDelegate {
     super.viewDidLoad()
         
         searchBar.delegate = self
-
+                              
         //mathematicsButton.layer.cornerRadius = 10.0 // 角丸のサイズ
         //japaneseButton.layer.cornerRadius = 10.0 // 角丸のサイズ
         //englishButton.layer.cornerRadius = 10.0 // 角丸のサイズ
@@ -90,7 +90,6 @@ class ViewController: UIViewController,UISearchBarDelegate {
             }
         }
     }
-
     
     @IBAction func mathematics() {
 
