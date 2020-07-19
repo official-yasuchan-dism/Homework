@@ -9,19 +9,25 @@
 import UIKit
 
 class NewViewController: UIViewController {
-
-    @IBOutlet weak var cancelButton: UIButton!
+        
+        @IBOutlet weak var cancelButton: UIButton!
         @IBOutlet var titleTextField: UITextField!
         @IBOutlet weak var addButton: UIButton!
         
         var saveData: UserDefaults = UserDefaults.standard
         
-        override func viewDidLoad() {
+        override func viewDidLoad() { 
             super.viewDidLoad()
 
             // Do any additional setup after loading the view.
             
             titleTextField.text = saveData.object(forKey: "title") as? String
+            
+            let userDefaults = UserDefaults.standard
+            
+            userDefaults.set("", forKey: "")
+            
+            userDefaults.synchronize()
         }
         
         @IBAction func addSubject() {
@@ -41,7 +47,7 @@ class NewViewController: UIViewController {
                        alert.addAction(okAction)
                        present(alert, animated: true, completion: nil)
            }
-
+    
         /*
         // MARK: - Navigation
         // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -50,4 +56,5 @@ class NewViewController: UIViewController {
             // Pass the selected object to the new view controller.
         }
         */
+
     }

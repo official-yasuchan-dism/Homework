@@ -16,6 +16,7 @@ class AddViewController: UIViewController {
     @IBOutlet weak var colorButton: UIButton!
     
     var saveData: UserDefaults = UserDefaults.standard
+    var subjectsArray: [String] = []
     
     private var titleText: String?
     
@@ -26,20 +27,24 @@ class AddViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         
-        titleTextField.text = saveData.object(forKey: "title") as? String
+        if saveData.object(forKey: "title") != nil {
+            subjectsArray = saveData.object(forKey: "title") as! [String]
+        }
         
     }
         
     @IBAction func addSubject() {
-    saveData.set(titleTextField.text, forKey: "title")
+        subjectsArray.append(titleTextField.text!)
+        saveData.set(subjectsArray, forKey: "title")
         
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func cancel() {
            
-             let alert = UIAlertController(title: "追加が完了していません", message: "このまま戻りますか？", preferredStyle: .alert)
+             let alert = UIAlertController(title: "追加が完了していません", message: "削除して戻りますか", preferredStyle: .alert)
                    let cancelAction = UIAlertAction(title: "キャンセル", style: .default)
-                   let okAction = UIAlertAction(title: "OK", style: .destructive) { (action: UIAlertAction) in
+                   let okAction = UIAlertAction(title: "削除", style: .destructive) { (action: UIAlertAction) in
                        self.dismiss(animated: true, completion: nil)
                        //OKボタンで前の画面に戻る
                    }

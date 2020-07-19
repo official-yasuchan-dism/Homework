@@ -10,6 +10,9 @@ import UIKit
 
 class ColorViewController: UIViewController {
     
+    
+    var saveData: UserDefaults = UserDefaults.standard
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -17,16 +20,24 @@ class ColorViewController: UIViewController {
             return 18 // 表示するセルの数
         }
         
+        
         func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) // 表示するセルを登録(先程命名した"Cell")
             cell.backgroundColor = .red  // セルの色
             return cell
         }
-    
         
         // Do any additional setup after loading the view.
+        
+        
     }
-
+    
+    @IBAction func completeButton() { 
+        self.dismiss(animated: true, completion: nil)
+        //OKボタンで前の画面に戻る
+    }
+    
+    
     /*
     // MARK: - Navigation
 

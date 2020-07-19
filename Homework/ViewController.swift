@@ -18,7 +18,8 @@ class ViewController: UIViewController,UISearchBarDelegate {
     @IBOutlet weak var parentStackView: UIStackView!
     @IBOutlet weak var searchBar: UISearchBar!
     
-    var subjectsArray: [String] = ["数学","国語","理科","社会","英語"]
+    var subjectsArray: [String] = []
+    var saveData: UserDefaults = UserDefaults.standard
     
     override func viewDidLoad() {
     super.viewDidLoad()
@@ -37,6 +38,15 @@ class ViewController: UIViewController,UISearchBarDelegate {
         
         //navigationController?.setNavigationBarHidden(true, animated: false)
         //Navigation barの非表示
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if saveData.object(forKey: "title") != nil {
+            subjectsArray = saveData.object(forKey: "title") as! [String]
+        }
+        
         layoutButton()
     }
     
@@ -65,28 +75,34 @@ class ViewController: UIViewController,UISearchBarDelegate {
     }
     
     func layoutButton() {
-        let num = subjectsArray.count
-        for i in 0...(num - 1) {
-            if i % 2 == 0 {
-                let stackView = UIStackView()
-                stackView.axis = .horizontal
-                stackView.spacing = 20
-                stackView.distribution = .fillEqually
-                let button = UIButton()
-                button.setTitle(subjectsArray[i], for: .normal)
-                button.backgroundColor = .blue
-                stackView.addArrangedSubview(button)
-                if (i + 1) < subjectsArray.count {
-                    let button2 = UIButton()
-                    button2.setTitle(subjectsArray[i + 1], for: .normal)
-                    button2.backgroundColor = .purple
-                    stackView.addArrangedSubview(button2)
+        if subjectsArray.count != 0 {
+            var subviews = parentStackView.subviews
+            for subview in subviews {
+                subview.removeFromSuperview()
+            }
+            let num = subjectsArray.count
+            for i in 0...(num - 1) {
+                if i % 2 == 0 {
+                    let stackView = UIStackView()
+                    stackView.axis = .horizontal
+                    stackView.spacing = 20
+                    stackView.distribution = .fillEqually
+                    let button = UIButton()
+                    button.setTitle(subjectsArray[i], for: .normal)
+                    button.backgroundColor = .black
+                    stackView.addArrangedSubview(button)
+                    if (i + 1) < subjectsArray.count {
+                        let button2 = UIButton()
+                        button2.setTitle(subjectsArray[i + 1], for: .normal)
+                        button2.backgroundColor = .black
+                        stackView.addArrangedSubview(button2)
+                    } else {
+                        let marginView = UIView()
+                        stackView.addArrangedSubview(marginView)
+                    }
+                    parentStackView.addArrangedSubview(stackView)
                 } else {
-                    let marginView = UIView()
-                    stackView.addArrangedSubview(marginView)
                 }
-                parentStackView.addArrangedSubview(stackView)
-            } else {
             }
         }
     }
@@ -110,6 +126,7 @@ class ViewController: UIViewController,UISearchBarDelegate {
     @IBAction func socialstudies() {
     
     }
+    
     
     //@IBAction func edit() {
         
