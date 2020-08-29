@@ -5,7 +5,6 @@
 //  Created by Yuma on 2020/02/09.
 //  Copyright © 2020 Yuma. All rights reserved.
 //
-
 import UIKit
 
 class ListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
@@ -29,7 +28,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         
      
      override func didReceiveMemoryWarning() {
-         super.didReceiveMemoryWarning() 
+         super.didReceiveMemoryWarning()
      }
     
     

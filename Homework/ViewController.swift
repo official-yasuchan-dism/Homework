@@ -5,16 +5,10 @@
 //  Created by Yuma on 2020/02/09.
 //  Copyright © 2020 Yuma. All rights reserved.
 //
-
 import UIKit
 
 class ViewController: UIViewController,UISearchBarDelegate {
-    
-    @IBOutlet weak var mathematicsButton: UIButton!
-    @IBOutlet weak var japaneseButton: UIButton!
-    @IBOutlet weak var englishButton: UIButton!
-    @IBOutlet weak var scienceButton: UIButton!
-    @IBOutlet weak var socialstudiesButton: UIButton!
+  
     @IBOutlet weak var parentStackView: UIStackView!
     @IBOutlet weak var searchBar: UISearchBar!
     
@@ -46,7 +40,6 @@ class ViewController: UIViewController,UISearchBarDelegate {
         if saveData.object(forKey: "title") != nil {
             subjectsArray = saveData.object(forKey: "title") as! [String]
         }
-        
         layoutButton()
     }
     
@@ -107,31 +100,11 @@ class ViewController: UIViewController,UISearchBarDelegate {
         }
     }
     
-    @IBAction func mathematics() {
-
-    }
-
-    @IBAction func japanese() {
-        
-    }
-    
-    @IBAction func english() {
-     
-    }
- 
-    @IBAction func science() {
-        
-    }
-    
-    @IBAction func socialstudies() {
-    
-    }
     
     
     //@IBAction func edit() {
         
     //}
-
     //@IBAction func plus() {
         
     //}
