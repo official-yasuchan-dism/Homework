@@ -13,16 +13,20 @@ class NewViewController: UIViewController {
     @IBOutlet weak var dateField: UITextField!
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet var titleTextField: UITextField!
+    @IBOutlet var contentTextView: UITextView!
     @IBOutlet weak var addButton: UIButton!
     
     //UIDatePickerを定義するための変数
     var datePicker: UIDatePicker = UIDatePicker()
     var saveData: UserDefaults = UserDefaults.standard
+    var subjectString = ""
+    var hwArray: [[String]] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        titleTextField.text = saveData.object(forKey: "title") as? String
+        hwArray = (saveData.object(forKey: subjectString) as? [[String]] ?? [])
+        //titleTextField.text = saveData.object(forKey: "title") as? String
         
         let userDefaults = UserDefaults.standard
         
@@ -84,7 +88,10 @@ class NewViewController: UIViewController {
     }
     
     @IBAction func addSubject() {
-    saveData.set(titleTextField.text, forKey: "title")
-        
+        let saveArray = [titleTextField.text!, dateField.text!, contentTextView.text!]
+        hwArray.append(saveArray)
+        saveData.set(hwArray, forKey: subjectString)
+        //saveData.set(titleTextField.text, forKey: "title")
+        self.dismiss(animated: true, completion: nil)
     }
 }

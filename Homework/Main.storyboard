@@ -123,6 +123,9 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="titleEditChanged:" destination="52l-qv-ZnN" eventType="touchUpInside" id="3xi-7Y-wDZ"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -153,7 +156,7 @@
             </objects>
             <point key="canvasLocation" x="-11381" y="-8192"/>
         </scene>
-        <!--教科-->
+        <!--教科別-->
         <scene sceneID="MBl-3g-fBm">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="5gA-8H-Sa6" customClass="ViewController" customModule="Homework" sceneMemberID="viewController">
@@ -200,7 +203,7 @@
                         <viewLayoutGuide key="safeArea" id="8RQ-Ow-rkx"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="教科" id="n2G-oT-yuJ">
+                    <navigationItem key="navigationItem" title="教科別" id="n2G-oT-yuJ">
                         <rightBarButtonItems>
                             <barButtonItem title="選択" image="ellipsis.circle.fill" catalog="system" id="A3J-KH-hvG"/>
                             <barButtonItem title="Item" image="plus" catalog="system" id="cMJ-ny-e9E">
@@ -214,6 +217,7 @@
                     <connections>
                         <outlet property="parentStackView" destination="Uba-fB-1Wq" id="yxH-fu-NLL"/>
                         <outlet property="searchBar" destination="uQl-I9-2Rq" id="MiF-x5-DMb"/>
+                        <segue destination="Sne-Ix-Wh5" kind="show" identifier="toListVC" id="BBb-sg-9K4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IoD-bO-wIZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -223,17 +227,17 @@
         <!--List View Controller-->
         <scene sceneID="ltR-uG-QqV">
             <objects>
-                <viewController id="Sne-Ix-Wh5" customClass="ListViewController" customModule="Homework" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ListVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Sne-Ix-Wh5" customClass="ListViewController" customModule="Homework" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nEK-1w-hag">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="検索" translatesAutoresizingMaskIntoConstraints="NO" id="FJS-Gv-UTL">
-                                <rect key="frame" x="12" y="139" width="390" height="56"/>
+                                <rect key="frame" x="12" y="148.5" width="390" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Tg9-DP-qI1">
-                                <rect key="frame" x="0.0" y="195" width="414" height="640"/>
+                                <rect key="frame" x="0.0" y="204.5" width="414" height="630.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="9uN-yB-xgW"/>
@@ -261,7 +265,7 @@
                                     <barButtonItem width="349" style="plain" systemItem="fixedSpace" id="YzW-Tk-ZlE"/>
                                     <barButtonItem title="Item" image="square.and.pencil" catalog="system" id="eyX-Ee-Pek">
                                         <connections>
-                                            <segue destination="l6R-FJ-c4C" kind="presentation" id="LrN-5q-0lI"/>
+                                            <segue destination="l6R-FJ-c4C" kind="presentation" identifier="toNewVC" id="LrN-5q-0lI"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -272,7 +276,7 @@
                             <constraint firstAttribute="bottom" secondItem="6AF-Kw-Pke" secondAttribute="bottom" constant="12" id="0Kd-2n-oRX"/>
                             <constraint firstItem="Tg9-DP-qI1" firstAttribute="leading" secondItem="n0W-T9-6pe" secondAttribute="leading" id="5dI-vv-QGL"/>
                             <constraint firstItem="Tg9-DP-qI1" firstAttribute="leading" secondItem="6AF-Kw-Pke" secondAttribute="leading" id="85X-Df-afo"/>
-                            <constraint firstItem="FJS-Gv-UTL" firstAttribute="top" secondItem="n0W-T9-6pe" secondAttribute="top" constant="95" id="87I-ES-H9b"/>
+                            <constraint firstItem="FJS-Gv-UTL" firstAttribute="top" secondItem="n0W-T9-6pe" secondAttribute="top" id="87I-ES-H9b"/>
                             <constraint firstItem="FJS-Gv-UTL" firstAttribute="leading" secondItem="n0W-T9-6pe" secondAttribute="leading" constant="12" id="8Cv-gH-ixH"/>
                             <constraint firstItem="6AF-Kw-Pke" firstAttribute="top" secondItem="Tg9-DP-qI1" secondAttribute="bottom" id="HPK-8v-NTy"/>
                             <constraint firstItem="6AF-Kw-Pke" firstAttribute="trailing" secondItem="n0W-T9-6pe" secondAttribute="trailing" id="Yzm-qc-nYG"/>
@@ -283,6 +287,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="n0W-T9-6pe"/>
                     </view>
+                    <navigationItem key="navigationItem" id="uIT-Mp-Ha0"/>
                     <connections>
                         <outlet property="searchBar" destination="FJS-Gv-UTL" id="mol-UH-QGK"/>
                         <outlet property="table" destination="Tg9-DP-qI1" id="e5X-MW-CNn"/>
@@ -297,7 +302,7 @@
             <objects>
                 <tableViewController modalPresentationStyle="fullScreen" id="Zf2-JG-yfM" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Qbk-ND-6OA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <connections>
@@ -438,6 +443,7 @@
                     <connections>
                         <outlet property="addButton" destination="zmC-sl-DPj" id="ZsI-Ft-bYs"/>
                         <outlet property="cancelButton" destination="NlJ-Pp-p6Z" id="2Cz-D7-D2p"/>
+                        <outlet property="contentTextView" destination="5or-WW-18d" id="6mw-pd-JsA"/>
                         <outlet property="dateField" destination="j6S-KH-FME" id="bOa-9l-3VR"/>
                         <outlet property="titleTextField" destination="hhO-UX-82z" id="M6A-FP-sNn"/>
                     </connections>
@@ -452,7 +458,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vo7-Ff-SOZ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="H8x-ng-F1e">
-                        <rect key="frame" x="0.0" y="44" width="414" height="104.5"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

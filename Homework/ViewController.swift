@@ -14,6 +14,7 @@ class ViewController: UIViewController,UISearchBarDelegate {
     
     var subjectsArray: [String] = []
     var saveData: UserDefaults = UserDefaults.standard
+    var num: Int = 0
     
     override func viewDidLoad() {
     super.viewDidLoad()
@@ -83,11 +84,15 @@ class ViewController: UIViewController,UISearchBarDelegate {
                     let button = UIButton()
                     button.setTitle(subjectsArray[i], for: .normal)
                     button.backgroundColor = .black
+                    button.addTarget(self, action: #selector(self.toListVC(_:)), for: .touchUpInside)
+                    button.tag = i+1
                     stackView.addArrangedSubview(button)
                     if (i + 1) < subjectsArray.count {
                         let button2 = UIButton()
                         button2.setTitle(subjectsArray[i + 1], for: .normal)
                         button2.backgroundColor = .black
+                        button2.addTarget(self, action: #selector(self.toListVC), for: .touchUpInside)
+                        button2.tag = i+2
                         stackView.addArrangedSubview(button2)
                     } else {
                         let marginView = UIView()
@@ -97,6 +102,20 @@ class ViewController: UIViewController,UISearchBarDelegate {
                 } else {
                 }
             }
+        }
+    }
+    
+    @objc func toListVC(_ sender: UIButton) {
+        num = sender.tag
+        print(num)
+        print(subjectsArray)
+        self.performSegue(withIdentifier: "toListVC", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toListVC" {
+            let vc = segue.destination as! ListViewController
+            vc.subjectString = subjectsArray[num - 1]
         }
     }
     
