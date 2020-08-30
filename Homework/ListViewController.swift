@@ -13,38 +13,35 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     let ud = UserDefaults.standard
     var hwArray: [[String]] = []
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.textLabel?.text = ""
-        return cell
-    }
-    
     //StoryBordでのTableViewの宣言
     @IBOutlet weak var table: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     
-     override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         
+        table.dataSource = self
         searchBar.delegate = self
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        cell.textLabel?.text = hwArray[indexPath.row][0]
+        return cell
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         print(subjectString)
         self.navigationItem.title = subjectString
-        
         hwArray = (ud.object(forKey: subjectString) as? [[String]] ?? [])
         print(hwArray)
     }
-        
-     
+    
      override func didReceiveMemoryWarning() {
          super.didReceiveMemoryWarning()
      }
-    
-    
-    
+
     // 検索バー編集開始時にキャンセルボタン有効化
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar){
         searchBar.setShowsCancelButton(true, animated: true)
@@ -71,9 +68,10 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     //セルの数　設定
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return hwArray.count
     }
     
+    //NewViewControllerに遷移
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toNewVC" {
             let vc = segue.destination as! NewViewController

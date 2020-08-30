@@ -36,14 +36,6 @@ class AddViewController: UIViewController {
         //self.validate()
     }
     
-    //private func validate() {
-    // nilの場合はtaddButtonを非活性に
-    //guard let titleTxt = self.titleText else {
-                  //self.addButton.isEnabled = false
-                    //return
-          //}
-    //}
-    
     @IBAction func addSubject() {
         subjectsArray.append(titleTextField.text!)
         saveData.set(subjectsArray, forKey: "title")

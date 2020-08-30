@@ -70,7 +70,7 @@ class ViewController: UIViewController,UISearchBarDelegate {
     
     func layoutButton() {
         if subjectsArray.count != 0 {
-            var subviews = parentStackView.subviews
+            let subviews = parentStackView.subviews
             for subview in subviews {
                 subview.removeFromSuperview()
             }
