@@ -20,19 +20,6 @@ class ViewController: UIViewController,UISearchBarDelegate {
     super.viewDidLoad()
         
         searchBar.delegate = self
-                              
-        //mathematicsButton.layer.cornerRadius = 10.0 // 角丸のサイズ
-        //japaneseButton.layer.cornerRadius = 10.0 // 角丸のサイズ
-        //englishButton.layer.cornerRadius = 10.0 // 角丸のサイズ
-        //scienceButton.layer.cornerRadius = 10.0 // 角丸のサイズ
-        //socialstudiesButton.layer.cornerRadius = 10.0 // 角丸のサイズ
-        //plusButton.imageView?.contentMode = .scaleAspectFit
-        //plusButton.contentHorizontalAlignment = .fill
-        //plusButton.contentVerticalAlignment = .fill
-        //plusボタンのimageをボタンの大きさに合わせて表示
-        
-        //navigationController?.setNavigationBarHidden(true, animated: false)
-        //Navigation barの非表示
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -119,18 +106,7 @@ class ViewController: UIViewController,UISearchBarDelegate {
         }
     }
     
-    
-    
-    //@IBAction func edit() {
-        
-    //}
-    //@IBAction func plus() {
-        
-    //}
-    
     //override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     //    let vc = segue.destination as! ListViewController
     //    vc.titleText = segue.identifier!
 }
-
-//Navigation barの色
