@@ -7,10 +7,11 @@
 //
 import UIKit
 
-class ViewController: UIViewController,UISearchBarDelegate {
+class ViewController: UIViewController {
   
     @IBOutlet weak var parentStackView: UIStackView!
-    @IBOutlet weak var searchBar: UISearchBar!
+    //@IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     var subjectsArray: [String] = []
     var saveData: UserDefaults = UserDefaults.standard
@@ -19,7 +20,7 @@ class ViewController: UIViewController,UISearchBarDelegate {
     override func viewDidLoad() {
     super.viewDidLoad()
         
-        searchBar.delegate = self
+        //searchBar.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -31,29 +32,29 @@ class ViewController: UIViewController,UISearchBarDelegate {
         layoutButton()
     }
     
-    // 検索バー編集開始時にキャンセルボタン有効化
-    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar){
-        searchBar.setShowsCancelButton(true, animated: true)
-    }
-    
-    // キャンセルボタンでキャセルボタン非表示
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        searchBar.resignFirstResponder()
-        searchBar.setShowsCancelButton(false, animated: true)
-    }
-
-    // エンターキーで検索
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar){
-        searchBar.resignFirstResponder()
-        searchBar.setShowsCancelButton(false, animated: true)
-    }
-    
-    // 入力された文字出力
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        print(searchText)
-
-        
-    }
+//    // 検索バー編集開始時にキャンセルボタン有効化
+//    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar){
+//        searchBar.setShowsCancelButton(true, animated: true)
+//    }
+//
+//    // キャンセルボタンでキャセルボタン非表示
+//    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+//        searchBar.resignFirstResponder()
+//        searchBar.setShowsCancelButton(false, animated: true)
+//    }
+//
+//    // エンターキーで検索
+//    func searchBarSearchButtonClicked(_ searchBar: UISearchBar){
+//        searchBar.resignFirstResponder()
+//        searchBar.setShowsCancelButton(false, animated: true)
+//    }
+//
+//    // 入力された文字出力
+//    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+//        print(searchText)
+//
+//
+//    }
     
     func layoutButton() {
         if subjectsArray.count != 0 {

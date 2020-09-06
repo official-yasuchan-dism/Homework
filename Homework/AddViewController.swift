@@ -17,7 +17,7 @@ class AddViewController: UIViewController {
     var saveData: UserDefaults = UserDefaults.standard
     var subjectsArray: [String] = []
     
-    private var titleText: String?
+    //private var titleText: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,10 +31,21 @@ class AddViewController: UIViewController {
         }
         
     }
-    @IBAction func titleEditChanged(_ sender: UITextField) {
-        self.titleText = sender.text
+    
+    //@IBAction func titleEditChanged(_ sender: UITextField) {
+        //self.titleText = sender.text
         //self.validate()
-    }
+    //}
+    
+    //private func validate() {
+    
+    // nilの場合はaddButtonを非活性に
+        //guard self.titleText != nil else {
+            
+            //self.addButton.isEnabled = false
+              //return
+              
+    //}
     
     @IBAction func addSubject() {
         subjectsArray.append(titleTextField.text!)
@@ -54,7 +65,7 @@ class AddViewController: UIViewController {
                    alert.addAction(cancelAction)
                    alert.addAction(okAction)
                    present(alert, animated: true, completion: nil)
-       }
+    }
     /*
     // MARK: - Navigation
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -64,3 +75,4 @@ class AddViewController: UIViewController {
     }
     */
 }
+
