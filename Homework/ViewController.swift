@@ -11,7 +11,6 @@ class ViewController: UIViewController {
   
     @IBOutlet weak var parentStackView: UIStackView!
     //@IBOutlet weak var searchBar: UISearchBar!
-    @IBOutlet weak var scrollView: UIScrollView!
     
     var subjectsArray: [String] = []
     var saveData: UserDefaults = UserDefaults.standard
@@ -23,7 +22,7 @@ class ViewController: UIViewController {
         //searchBar.delegate = self
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) { 
         super.viewWillAppear(animated)
         
         if saveData.object(forKey: "title") != nil {
@@ -71,14 +70,16 @@ class ViewController: UIViewController {
                     stackView.distribution = .fillEqually
                     let button = UIButton()
                     button.setTitle(subjectsArray[i], for: .normal)
-                    button.backgroundColor = .black
+                    button.backgroundColor = .systemPink
+                    button.layer.cornerRadius = 10
                     button.addTarget(self, action: #selector(self.toListVC(_:)), for: .touchUpInside)
                     button.tag = i+1
                     stackView.addArrangedSubview(button)
                     if (i + 1) < subjectsArray.count {
                         let button2 = UIButton()
                         button2.setTitle(subjectsArray[i + 1], for: .normal)
-                        button2.backgroundColor = .black
+                        button2.backgroundColor = .systemPink
+                        button2.layer.cornerRadius = 10
                         button2.addTarget(self, action: #selector(self.toListVC), for: .touchUpInside)
                         button2.tag = i+2
                         stackView.addArrangedSubview(button2)
