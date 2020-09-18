@@ -12,7 +12,6 @@ class AddViewController: UIViewController {
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet var titleTextField: UITextField!
     @IBOutlet weak var addButton: UIButton!
-    @IBOutlet weak var colorButton: UIButton!
     
     var saveData: UserDefaults = UserDefaults.standard
     var subjectsArray: [String] = []
@@ -21,8 +20,6 @@ class AddViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        colorButton.layer.cornerRadius = 10.0
         
         // Do any additional setup after loading the view.
         

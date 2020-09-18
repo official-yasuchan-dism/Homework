@@ -35,17 +35,8 @@
                                     <action selector="cancel" destination="52l-qv-ZnN" eventType="touchDown" id="LTa-vC-Gd0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQ9-tg-Pgz">
-                                <rect key="frame" x="20" y="167" width="40" height="39"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="6n7-cP-tfU"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <state key="normal" image="wand.and.stars.inverse" catalog="system"/>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="テキストを入力" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L2T-rL-qZP">
-                                <rect key="frame" x="68" y="169" width="326" height="34"/>
+                                <rect key="frame" x="20" y="169" width="374" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="gPY-te-Vfp"/>
                                 </constraints>
@@ -60,15 +51,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="mVk-to-3Ov" firstAttribute="leading" secondItem="891-e9-sd6" secondAttribute="leading" constant="20" id="1Jf-TJ-fQN"/>
-                            <constraint firstItem="lQ9-tg-Pgz" firstAttribute="leading" secondItem="891-e9-sd6" secondAttribute="leading" constant="20" id="1MA-BW-bOj"/>
                             <constraint firstItem="OwM-6X-0Oh" firstAttribute="top" secondItem="mVk-to-3Ov" secondAttribute="bottom" constant="21" id="4Jg-E3-YPU"/>
                             <constraint firstItem="891-e9-sd6" firstAttribute="trailing" secondItem="L2T-rL-qZP" secondAttribute="trailing" constant="20" id="6Cz-N0-NuX"/>
-                            <constraint firstItem="lQ9-tg-Pgz" firstAttribute="top" secondItem="OwM-6X-0Oh" secondAttribute="bottom" constant="16" id="AHW-vx-YM1"/>
                             <constraint firstItem="L2T-rL-qZP" firstAttribute="top" secondItem="OwM-6X-0Oh" secondAttribute="bottom" constant="18" id="BfU-HX-TTO"/>
+                            <constraint firstItem="L2T-rL-qZP" firstAttribute="leading" secondItem="891-e9-sd6" secondAttribute="leading" constant="20" id="Kgc-f9-paP"/>
                             <constraint firstItem="mVk-to-3Ov" firstAttribute="top" secondItem="zrp-hR-Zac" secondAttribute="topMargin" constant="20" id="XFd-JW-AgQ"/>
                             <constraint firstItem="891-e9-sd6" firstAttribute="trailing" secondItem="wO7-so-EE5" secondAttribute="trailing" constant="20" id="Y2m-ap-sO8"/>
                             <constraint firstItem="OwM-6X-0Oh" firstAttribute="leading" secondItem="891-e9-sd6" secondAttribute="leading" constant="20" id="cqg-z3-uOY"/>
-                            <constraint firstItem="L2T-rL-qZP" firstAttribute="leading" secondItem="lQ9-tg-Pgz" secondAttribute="trailing" constant="8" id="n2C-84-fMB"/>
                             <constraint firstItem="wO7-so-EE5" firstAttribute="top" secondItem="zrp-hR-Zac" secondAttribute="topMargin" constant="20" id="rbV-Db-3jZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="891-e9-sd6"/>
@@ -77,13 +66,12 @@
                     <connections>
                         <outlet property="addButton" destination="wO7-so-EE5" id="8ob-fV-lJf"/>
                         <outlet property="cancelButton" destination="mVk-to-3Ov" id="VOp-RU-RwI"/>
-                        <outlet property="colorButton" destination="lQ9-tg-Pgz" id="iiO-Nx-w0d"/>
                         <outlet property="titleTextField" destination="L2T-rL-qZP" id="bwq-zL-EB5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gHT-Hi-ZpF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-11381" y="-8192"/>
+            <point key="canvasLocation" x="-11381.159420289856" y="-8192.4107142857138"/>
         </scene>
         <!--教科別-->
         <scene sceneID="MBl-3g-fBm">
@@ -393,7 +381,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vo7-Ff-SOZ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="H8x-ng-F1e">
-                        <rect key="frame" x="0.0" y="44" width="414" height="104.5"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -409,6 +397,5 @@
     <resources>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="square.and.pencil" catalog="system" width="128" height="118"/>
-        <image name="wand.and.stars.inverse" catalog="system" width="128" height="113"/>
     </resources>
 </document>
